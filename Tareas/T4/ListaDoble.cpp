@@ -44,7 +44,7 @@ void buscarNodo(){
 	actual = primero;
 	bool encontrado = false;
 	int nodoBuscado = 0;
-	cout << "Ingrese el dato del Nodo a Buscar: ";
+	cout << "Ingrese el Nodo a Buscar: ";
 	cin >> nodoBuscado;
 	if(primero!=NULL){
 		
@@ -65,7 +65,7 @@ void buscarNodo(){
 		}
 		
 	}else{
-		cout << "\n La listas se encuentra Vacia\n\n";
+		cout << "\n Lista Vacia \n\n";
 	}
 }
 
@@ -77,14 +77,14 @@ void eliminarNodo(){
 	anterior = NULL;
 	bool encontrado = false;
 	int nodoBuscado = 0;
-	cout << " Ingrese el dato del Nodo a Buscar para Eliminar: ";
+	cout << " Nodo a eliminar: ";
 	cin >> nodoBuscado;
 	if(primero!=NULL){
 		
 		while(actual!=NULL && encontrado!=true){
 			
 			if(actual->dato == nodoBuscado){
-				cout << "\n Nodo con el dato ( " << nodoBuscado << " ) Encontrado";
+				cout << "\n Dato: " << nodoBuscado;
 				
 				if(actual==primero){
 					primero = primero->siguiente;
@@ -109,11 +109,6 @@ void eliminarNodo(){
 		}
 		
 	}else{
-		cout << "\n La listas se encuentra Vacia\n\n";
+		cout << "\n Lista vacia\n\n";
 	}
 }
-
-
-
-
-
